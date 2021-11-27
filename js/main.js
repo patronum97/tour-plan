@@ -1,11 +1,26 @@
-const swiper = new Swiper(".swiper", {
+const hotelSwiper = new Swiper(".swiper-hotel", {
   // Optional parameters
   loop: true,
 
   // Navigation arrows
   navigation: {
-    nextEl: ".slider-button--next",
-    prevEl: ".slider-button--prev",
+    nextEl: ".swiper-hotel__button--next",
+    prevEl: ".swiper-hotel__button--prev",
+  },
+  // Управление слайдером стрелками с клавиатуры
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+});
+const reviewsSwiper = new Swiper(".reviews-slider", {
+  // Optional parameters
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".reviews-slider__button--next",
+    prevEl: ".reviews-slider__button--prev",
   },
   // Управление слайдером стрелками с клавиатуры
   keyboard: {
