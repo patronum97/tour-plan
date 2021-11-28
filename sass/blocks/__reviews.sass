@@ -10,7 +10,7 @@
     text-transform: uppercase
     margin: 0
   &-slider
-    width: 1074px
+    // max-width: 1074px
     
     &__item
       position: relative
@@ -20,7 +20,7 @@
       flex-direction: column
       align-items: center
       margin-top: 45px
-      width: 730px
+      max-width: 730px
       margin: 115px auto 0
       padding: 0 62px 30px
       &:before
@@ -43,7 +43,7 @@
         height: 47px
     &__button
       position: absolute
-      top: 50%
+      top: 49%
       transform: translateY(-50%)
       width: 30px
       height: 30px
@@ -55,10 +55,10 @@
       cursor: pointer
       z-index: 100
       &--next
-        right: 0
+        right: 17px
         background-image: url(../img/gray-arrow-next.svg)
       &--prev
-        left: 0
+        left: 17px
         background-image: url(../img/gray-arrow-prev.svg)
     &__profile
       display: flex
@@ -87,9 +87,10 @@
       
     &__rating
       align-items: center
-    &-stars__item
-      width: 6px
-      height: 6px
+  &-stars__item
+    width: 8px
+    height: 8px
+    margin: -1px
 
     &__text
       padding-right: 35px

@@ -56,6 +56,32 @@
     &__title
       margin-top: -8px
       margin-left: 2px
+  .reviews
+    padding: 37px 0 70px 0
+    &__title
+      font-size: 30px
+      line-height: 38px
+    &-slider
+      &__profile
+        margin-bottom: 16px
+      &__item
+        max-width: 579px
+        margin: 95px auto 0
+      &__avatar
+        margin-bottom: -3px
+      &__username
+        margin-bottom: 10px
+      &__date
+        margin-bottom: -3px
+      &__text
+        font-size: 12px
+        line-height: 160%
+      &__button
+        &--next
+        right: 1px
+        &--prev
+          left: 1px
+
 
 
 @media (max-width: 768px)
@@ -108,12 +134,12 @@
         margin-left: 0
     &-discription 
       letter-spacing: 0.26px
-  
+  .swiper-hotel
+    height: 350px
   .slider
     height: 350px
     .slide-img
-      height: 350px
-      
+      height: 350px   
   .hotel
     &-right-block
       flex-direction: column
@@ -142,6 +168,23 @@
     width: 100%
     &__input
       padding-left: 20px
+  .reviews
+    &-slider
+      &__item
+        padding: 0 30px 30px
+        &:after, &:before
+          display: none
+      &__button
+        top: 80px
+        &--prev
+          margin-left: -75px
+          left: 50%
+          /** центрирование **/
+          transform: translate(-50%, 0)
+        &--next
+          right: 50%
+          transform: translate(-50%, 0)
+          margin-right: -100px
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -154,8 +197,11 @@
   .map
     width: 95%
     height: 173px
-  .swiper
+  .swiper-hotel
+    height: 179px
     .slide-img
+      height: 179px
+    &__item
       height: 179px
   .hotel
     &-right-block
@@ -167,7 +213,53 @@
     padding: 76px 0 83px 0
     &__title
       margin-bottom: 37px
+  .reviews
+    padding: 40px 0 70px 0
+    &__title
+      font-size: 18px
+      line-height: 23px
+      padding-left: 10px
+      padding-right: 24px
+    &-slider
+      &__profile
+        margin-right: 15px
+      &__item
+        margin: 90px auto 0
+      &__text
+        font-size: 12px
+        line-height: 160%
+        width: 95%
+        min-height: 266px
+        margin-left: -9px
+      &__button
+        top: 75px
+        &--prev
+          margin-left: -90px
 
-@media (max-width: 350px)
+@media (max-width: 380px)
   .subscribe
     width: 280px
+  .reviews
+    padding: 40px 0 70px 0
+    &__title
+      font-size: 18px
+      line-height: 23px
+      padding-left: 10px
+      padding-right: 24px
+    &-slider
+      min-height: 500px
+      &__profile
+        margin-right: 15px
+      &__item
+        margin: 90px auto 0
+      &__text
+        font-size: 12px
+        line-height: 160%
+        width: 219px
+        min-height: 266px
+        margin-left: -9px
+      &__button
+        &--next
+          margin-right: -110px
+        &--prev
+          margin-left: -100px
