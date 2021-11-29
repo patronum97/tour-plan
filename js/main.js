@@ -30,5 +30,6 @@ const reviewsSwiper = new Swiper(".reviews-slider", {
 });
 $(".newsletter").parallax({
   imageSrc: "../img/newsletter-bg.jpg",
+  /* imageSrc: "img/newsletter-bg.jpg", */
   speed: 0.4,
 });
