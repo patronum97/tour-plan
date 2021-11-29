@@ -949,7 +949,7 @@ img {
 }
 
 .reviews {
-  padding: 40px 0 70px 0;
+  padding: 40px 0 0px 0;
   background-color: #F5FAFE;
 }
 
@@ -1071,6 +1071,14 @@ img {
   line-height: 13px;
 }
 
+.reviews-slider__text {
+  font-size: 12px;
+  line-height: 160%;
+  text-align: justify;
+  margin: auto;
+  max-width: 537px;
+}
+
 .reviews-slider__rating {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1083,18 +1091,8 @@ img {
   margin: -1px;
 }
 
-.reviews-stars__item__text {
-  padding-right: 35px;
-  padding-left: 35px;
-  font-size: 12px;
-  line-height: 160%;
-  text-align: justify;
-  margin: auto;
-  min-width: 537px;
-}
-
 .activities {
-  padding: 60px 0 98px 0;
+  padding: 55px 0 98px 0;
 }
 
 .activities__title {
@@ -1193,7 +1191,6 @@ img {
   }
   .card {
     width: 230px;
-    height: 230px;
   }
 }
 
@@ -1270,14 +1267,14 @@ img {
     margin-left: 2px;
   }
   .reviews {
-    padding: 37px 0 70px 0;
+    padding: 37px 0 0 0;
   }
   .reviews__title {
     font-size: 30px;
     line-height: 38px;
   }
   .reviews-slider__profile {
-    margin-bottom: 16px;
+    margin-bottom: px;
   }
   .reviews-slider__item {
     max-width: 579px;
@@ -1295,6 +1292,9 @@ img {
   .reviews-slider__text {
     font-size: 12px;
     line-height: 160%;
+    padding-left: 0;
+    width: 455px;
+    padding-right: 0;
   }
   .reviews-slider__button {
     right: 1px;
@@ -1302,12 +1302,16 @@ img {
   .reviews-slider__button--prev {
     left: 1px;
   }
+  .activities {
+    padding: 44px 0 98px 0;
+  }
   .activities-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
   .activities__card {
     margin-bottom: 20px;
+    padding: 24px 106px 24px 26px;
   }
   .card {
     width: 339px;
@@ -1539,6 +1543,14 @@ img {
   .reviews-slider__button--prev {
     margin-left: -90px;
   }
+  .activities {
+    padding-top: 33px;
+  }
+  .activities__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 35px;
+  }
 }
 
 @media (max-width: 380px) {
@@ -1568,7 +1580,7 @@ img {
     line-height: 160%;
     width: 219px;
     min-height: 266px;
-    margin-left: -9px;
+    margin-right: 1px;
   }
   .reviews-slider__button--next {
     margin-right: -110px;
@@ -1577,7 +1589,7 @@ img {
     margin-left: -100px;
   }
   .card {
-    width: 100%;
+    width: 95%;
   }
 }
 /*# sourceMappingURL=style.css.map */
