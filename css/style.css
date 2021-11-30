@@ -1502,6 +1502,16 @@ img {
   .swiper-hotel__item {
     height: 179px;
   }
+  .swiper-hotel__button {
+    width: 0px;
+    height: 7px;
+  }
+  .swiper-hotel__button--next {
+    right: 7px;
+  }
+  .swiper-hotel__button--prev {
+    left: 7px;
+  }
   .hotel-right-block {
     margin-top: 23px;
     min-height: 400px;
