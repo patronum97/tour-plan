@@ -6,7 +6,7 @@
   .slide-img
     height: 100%
   .card
-    width: 230px
+    width: 230px 
     
    
 
@@ -210,6 +210,16 @@
   .card
     width: 49%
     height: 255px
+    &__title
+      &-1
+        margin-right: 0px
+      &-2
+        margin-right: -10px
+      &-3
+        margin-right: -20px
+      &-4
+        margin-right: -60px
+        
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -235,9 +245,6 @@
         right: 7px
       &--prev
         left: 7px
-
-
-
   .hotel
     &-right-block
       margin-top: 23px
@@ -266,19 +273,29 @@
         width: 95%
         min-height: 266px
         margin-left: -9px
+        text-align: left
       &__button
         top: 75px
         &--prev
           margin-left: -90px
   .activities
     padding-top: 33px
+    &__card
+      &-1
+        order: -2
+      &-2
+        order: 1
+      &-3
+        order: -2
+        margin-bottom: 28px
+      &-4
+        order: 1
     &__title
       font-size: 18px
       line-height: 23px
       margin-bottom: 35px
-  
-    
-
+  .card
+      width: 95%
 @media (max-width: 380px)
   .subscribe
     width: 280px
