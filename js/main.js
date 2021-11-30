@@ -28,8 +28,9 @@ const reviewsSwiper = new Swiper(".reviews-slider", {
     onlyInViewport: false,
   },
 });
-$(".newsletter").parallax({
-  imageSrc: "../img/newsletter-bg.jpg",
-  /* imageSrc: "img/newsletter-bg.jpg", */
-  speed: 0.4,
-});
+// /* $(".newsletter").parallax({
+//   imageSrc: "../img/newsletter-bg.jpg",
+
+//   /* imageSrc: "img/newsletter-bg.jpg", */
+//   speed: 0.4,
+// });
