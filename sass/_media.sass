@@ -180,9 +180,9 @@
         z-index: 99
     &__search, &__user
       &--mobile
-        &_hidden
+        &--hidden
           display: none
-        &_visible
+        &--visible
           display: flex
     &__user
       flex-direction: column
@@ -195,6 +195,8 @@
       bottom: 0
       top: 78px
       padding-top: 30px
+      padding-bottom: 68px
+      min-height: 498px
       &--visible
         display: block
     &-menu
@@ -202,7 +204,7 @@
       &__item
         margin-bottom: 20px
         &--mobile
-          &_visible
+          &--visible
             display: block
         
     &-top
@@ -481,7 +483,19 @@
       &__info
         margin-bottom: 11px
         
-      
+  .navbar
+    &-menu
+      padding: 0px 14px 21px 15px
+      &__item 
+        margin-bottom: 17px
+        margin-left: -17px
+    &__user
+      margin-right: -5px
+      margin-bottom: 10px
+    &__search
+      margin-right: 45px
+      width: 248px
+      margin-bottom: 19px
 
 @media (max-width: 380px)
   .subscribe
