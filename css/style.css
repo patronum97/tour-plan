@@ -1459,6 +1459,22 @@ img {
   color: inherit;
 }
 
+.thankyou-button {
+  min-width: 100px;
+  min-height: 30px;
+  padding: 12px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 4px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
