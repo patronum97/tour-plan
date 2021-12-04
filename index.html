@@ -167,7 +167,7 @@
     <!-- /.hotel -->
     <div class="hotel-activities">
       <div class="container">
-        <div class="hotel-grid hotel__slider">
+        <div class="hotel-grid">
           <div class="slider">
             <!-- Slider main container -->
             <div class="swiper swiper-hotel">
@@ -279,11 +279,16 @@
             subscribe to our
             <span class="newsletter-title__strong">Newsletter</span>
           </h2>
-          <form action="#" class="subscribe newsletter__subscribe">
+          <form
+            action="send.php"
+            method="POST"
+            class="subscribe newsletter__subscribe"
+          >
             <input
               type="text"
               class="subscribe__input"
               placeholder="Your email address"
+              name="email"
             />
             <button class="subscribe__button">Send</button>
           </form>
@@ -311,27 +316,27 @@
                   <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                   <div class="reviews-rating">
                     <img
-                      class="reviews-stars__item"
+                      class="reviews-rating__item"
                       src="img/star.svg"
                       alt="star"
                     />
                     <img
-                      class="reviews-stars__item"
+                      class="reviews-rating__item"
                       src="img/star.svg"
                       alt="star"
                     />
                     <img
-                      class="reviews-stars__item"
+                      class="reviews-rating__item"
                       src="img/star.svg"
                       alt="star"
                     />
                     <img
-                      class="reviews-stars__item"
+                      class="reviews-rating__item"
                       src="img/star.svg"
                       alt="star"
                     />
                     <img
-                      class="reviews-stars__item"
+                      class="reviews-rating__item"
                       src="img/star.svg"
                       alt="star"
                     />
@@ -366,27 +371,27 @@
                   <span class="reviews-slider__date">Stayed 10 Avg, 2019</span>
                   <div class="reviews-rating">
                     <img
-                      class="reviews-stars__item"
+                      class="reviews-rating__item"
                       src="img/star.svg"
                       alt="star"
                     />
                     <img
-                      class="reviews-stars__item"
+                      class="reviews-rating__item"
                       src="img/star.svg"
                       alt="star"
                     />
                     <img
-                      class="reviews-stars__item"
+                      class="reviews-rating__item"
                       src="img/star.svg"
                       alt="star"
                     />
                     <img
-                      class="reviews-stars__item"
+                      class="reviews-rating__item"
                       src="img/star.svg"
                       alt="star"
                     />
                     <img
-                      class="reviews-stars__item"
+                      class="reviews-rating__item"
                       src="img/star.svg"
                       alt="star"
                     />
@@ -418,27 +423,27 @@
                   <span class="reviews-slider__date">Stayed 18 May, 2019</span>
                   <div class="reviews-rating">
                     <img
-                      class="reviews-stars__item"
+                      class="reviews-rating__item"
                       src="img/star.svg"
                       alt="star"
                     />
                     <img
-                      class="reviews-stars__item"
+                      class="reviews-rating__item"
                       src="img/star.svg"
                       alt="star"
                     />
                     <img
-                      class="reviews-stars__item"
+                      class="reviews-rating__item"
                       src="img/star.svg"
                       alt="star"
                     />
                     <img
-                      class="reviews-stars__item"
+                      class="reviews-rating__item"
                       src="img/star.svg"
                       alt="star"
                     />
                     <img
-                      class="reviews-stars__item"
+                      class="reviews-rating__item"
                       src="img/star.svg"
                       alt="star"
                     />
@@ -469,27 +474,27 @@
                   <span class="reviews-slider__date">Stayed 27 Nov, 2019</span>
                   <div class="reviews-rating">
                     <img
-                      class="reviews-stars__item"
+                      class="reviews-rating__item"
                       src="img/star.svg"
                       alt="star"
                     />
                     <img
-                      class="reviews-stars__item"
+                      class="reviews-rating__item"
                       src="img/star.svg"
                       alt="star"
                     />
                     <img
-                      class="reviews-stars__item"
+                      class="reviews-rating__item"
                       src="img/star.svg"
                       alt="star"
                     />
                     <img
-                      class="reviews-stars__item"
+                      class="reviews-rating__item"
                       src="img/star.svg"
                       alt="star"
                     />
                     <img
-                      class="reviews-stars__item"
+                      class="reviews-rating__item"
                       src="img/star.svg"
                       alt="star"
                     />
@@ -520,27 +525,27 @@
                   <span class="reviews-slider__date">Stayed 30 Nov, 2020</span>
                   <div class="reviews-rating">
                     <img
-                      class="reviews-stars__item"
+                      class="reviews-rating__item"
                       src="img/star.svg"
                       alt="star"
                     />
                     <img
-                      class="reviews-stars__item"
+                      class="reviews-rating__item"
                       src="img/star.svg"
                       alt="star"
                     />
                     <img
-                      class="reviews-stars__item"
+                      class="reviews-rating__item"
                       src="img/star.svg"
                       alt="star"
                     />
                     <img
-                      class="reviews-stars__item"
+                      class="reviews-rating__item"
                       src="img/star.svg"
                       alt="star"
                     />
                     <img
-                      class="reviews-stars__item"
+                      class="reviews-rating__item"
                       src="img/star.svg"
                       alt="star"
                     />
@@ -779,22 +784,25 @@ quest"
             <h3 class="footer__title footer__title--mb-mes">
               Send us a message
             </h3>
-            <form action="#" class="footer__form">
+            <form action="send.php" method="POST" class="footer__form">
               <input
                 type="text"
                 class="input footer__input"
                 placeholder="Your Full Name*"
+                name="name"
               />
               <input
                 type="text"
                 class="input footer__input"
                 placeholder="Phone Number*"
+                name="phone"
               />
               <textarea
                 cols="30"
                 rows="10"
                 class="footer__message"
                 placeholder="Message"
+                name="message"
               ></textarea>
               <button class="button footer__button" type="submit">Send</button>
               <span class="footer__info">* Required Fields</span>

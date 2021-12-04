@@ -1091,7 +1091,7 @@ img {
           align-items: center;
 }
 
-.reviews-stars__item {
+.reviews-rating__item {
   width: 8px;
   height: 8px;
   margin: -1px;
@@ -1969,12 +1969,14 @@ img {
   .swiper-hotel__button--prev {
     left: 7px;
   }
+  .hotel {
+    /** &-grid
+      &__slider
+        margin-bottom: 20px **/
+  }
   .hotel-right-block {
     margin-top: 23px;
     min-height: 400px;
-  }
-  .hotel__slider {
-    margin-bottom: 20px;
   }
   .newsletter {
     padding: 76px 0 83px 0;
