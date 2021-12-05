@@ -162,6 +162,10 @@
       margin-left: 0
       &__info
         margin-left: 0
+  .modal
+    &__dialog
+      &--visible
+        padding: 5% 5%
 
 @media (max-width: 768px)
   .container
@@ -205,8 +209,7 @@
         margin-bottom: 20px
         &--mobile
           &--visible
-            display: block
-        
+            display: block   
     &-top
       &__menu-button
         padding: 0
@@ -329,6 +332,12 @@
   .footer
     &__additional
       margin-left: 0
+  .modal
+    &__button
+      min-width: 50%
+      min-height: 50%
+
+
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -497,6 +506,34 @@
       margin-right: 45px
       width: 248px
       margin-bottom: 19px
+  .modal
+    &__close
+      top: 3px
+      right: 7px
+    &__img
+      width: 7px
+      height: 7px
+    &__title
+      font-size: 11px
+      margin-bottom: 7px
+    &__input
+      margin-bottom: 10px
+      font-size: 7px
+      padding: 0 10px
+      height: 20px
+    &__message
+      margin-bottom: 10px
+      font-size: 7px
+      padding: 7px 10px
+      min-height: 70%
+    &__info
+      font-size: 6px
+    &__button
+      min-width: 50%
+      height: 19px
+      padding: 2px
+      font-size: 7px
+      text-align: center
 
 @media (max-width: 380px)
   .subscribe
