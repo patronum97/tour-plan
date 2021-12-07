@@ -2,7 +2,6 @@ $(document).ready(function () {
   const hotelSwiper = new Swiper(".swiper-hotel", {
     // Optional parameters
     loop: true,
-
     // Navigation arrows
     navigation: {
       nextEl: ".swiper-hotel__button--next",
@@ -17,7 +16,7 @@ $(document).ready(function () {
   const reviewsSwiper = new Swiper(".reviews-slider", {
     // Optional parameters
     loop: true,
-
+    autoHeight: true,
     // Navigation arrows
     navigation: {
       nextEl: ".reviews-slider__button--next",
@@ -94,4 +93,5 @@ $(document).ready(function () {
       },
     });
   });
+  $(".phone").mask("+7(999) 999-99-99");
 });

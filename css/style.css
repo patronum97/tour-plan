@@ -395,6 +395,7 @@ img {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  outline: none;
 }
 
 .invalid {
@@ -489,6 +490,7 @@ img {
   line-height: 15px;
   color: #333333;
   border: none;
+  outline: none;
 }
 
 .search__input-group {
@@ -742,6 +744,7 @@ img {
   background-position: center;
   background-size: 10px;
   background-color: transparent;
+  outline: none;
 }
 
 .swiper-hotel__button--next {
@@ -985,6 +988,7 @@ img {
   font-size: 14px;
   line-height: 18px;
   color: #BDBDBD;
+  outline: none;
 }
 
 .subscribe__input-group {
@@ -1078,7 +1082,7 @@ img {
 
 .reviews-slider__button {
   position: absolute;
-  top: 49%;
+  top: 55%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 30px;
@@ -1174,6 +1178,7 @@ img {
   line-height: 30px;
   text-transform: uppercase;
   margin-bottom: 57px;
+  margin-top: 72px;
 }
 
 .activities-wrapper {
@@ -1544,6 +1549,8 @@ img {
 
 .modal__dialog {
   position: fixed;
+  max-height: 478px;
+  overflow: auto;
   top: 50%;
   left: 50%;
   padding: 33px 88px;
@@ -1578,8 +1585,8 @@ img {
   font-weight: bold;
   font-size: 18px;
   line-height: 23px;
-  margin-bottom: 15px;
-  margin-top: 0;
+  margin-bottom: -2px;
+  margin-top: -2px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -1648,6 +1655,9 @@ img {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  __dialog {
+    max-height: 100vh;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1671,7 +1681,7 @@ img {
   .logo {
     width: 132px;
   }
-  .search__input {
+  .search__input-group {
     width: 340px;
   }
   .breadcrumb-list {
@@ -1753,6 +1763,7 @@ img {
     padding-right: 0;
   }
   .reviews-slider__button {
+    top: 57%;
     right: 1px;
   }
   .reviews-slider__button--prev {
@@ -1769,6 +1780,9 @@ img {
     margin-bottom: 20px;
     padding: 24px 106px 24px 26px;
   }
+  .activities__title {
+    margin-top: 77px;
+  }
   .card {
     width: 339px;
   }
@@ -1781,8 +1795,9 @@ img {
     grid-row-gap: 40px;
   }
   .footer__input-group {
-    -ms-flex-preferred-size: 49%;
-        flex-basis: 49%;
+    -ms-flex-preferred-size: 47%;
+        flex-basis: 47%;
+    font-size: 12px;
   }
   .footer__logo {
     -ms-grid-row: 1;
@@ -1791,6 +1806,9 @@ img {
     grid-column: span 1;
     width: 95px;
     margin-left: 0;
+  }
+  .footer__message {
+    font-size: 12px;
   }
   .footer__social-network {
     -ms-grid-row: 1;
@@ -1954,6 +1972,7 @@ img {
     background-color: #fff;
     cursor: pointer;
     margin: 0 13px;
+    outline: none;
   }
   .navbar .menu-button__line {
     width: 16px;
@@ -2193,7 +2212,7 @@ img {
     margin-left: -90px;
   }
   .activities {
-    padding-top: 33px;
+    padding-top: 24px;
   }
   .activities__card-1 {
     -webkit-box-ordinal-group: -1;
@@ -2220,6 +2239,7 @@ img {
     font-size: 18px;
     line-height: 23px;
     margin-bottom: 35px;
+    margin-top: 0;
   }
   .card {
     width: 95%;
@@ -2364,6 +2384,9 @@ img {
     width: 248px;
     margin-bottom: 19px;
   }
+  .modal__dialog {
+    width: 60%;
+  }
   .modal__close {
     top: 3px;
     right: 7px;
@@ -2373,30 +2396,34 @@ img {
     height: 7px;
   }
   .modal__title {
-    font-size: 11px;
+    font-size: 15px;
     margin-bottom: 7px;
   }
   .modal__input {
-    margin-bottom: 10px;
-    font-size: 7px;
-    padding: 0 10px;
-    height: 20px;
+    margin-top: 10px;
+    font-size: 10px;
+    padding: 0 13px;
+    height: 40px;
   }
   .modal__message {
-    margin-bottom: 10px;
-    font-size: 7px;
-    padding: 7px 10px;
-    min-height: 70%;
+    margin-top: 10px;
+    font-size: 10px;
+    padding: 9px 13px;
+    min-height: 80px;
   }
   .modal__info {
-    font-size: 6px;
+    margin-top: 5%;
+    font-size: 10px;
   }
   .modal__button {
     min-width: 50%;
-    height: 19px;
+    height: 40px;
     padding: 2px;
-    font-size: 7px;
+    font-size: 10px;
     text-align: center;
+  }
+  .invalid {
+    font-size: 10px;
   }
 }
 
@@ -2425,7 +2452,7 @@ img {
   .reviews-slider__text {
     font-size: 12px;
     line-height: 160%;
-    width: 219px;
+    width: 222px;
     min-height: 266px;
     margin-right: 1px;
   }
@@ -2443,6 +2470,20 @@ img {
   }
   .footer__contact-form {
     width: 281px;
+  }
+  .modal__dialog {
+    width: 75%;
+  }
+  .modal__info {
+    margin-top: 5%;
+    font-size: 8px;
+  }
+  .modal__button {
+    min-width: 50%;
+    height: 35px;
+    padding: 2px;
+    font-size: 10px;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

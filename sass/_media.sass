@@ -11,6 +11,9 @@
     &__input
       &-group
         flex-basis: 100%
+  .modal
+  &__dialog
+    max-height: 100vh
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -29,7 +32,8 @@
     width: 132px
   .search
     &__input
-      width: 340px
+      &-group
+        width: 340px 
   .breadcrumb
     &-list
       padding: 20px 0 18px 0
@@ -85,6 +89,7 @@
         width: 455px
         padding-right: 0
       &__button
+        top: 57%
         &--next
         right: 1px
         &--prev
@@ -96,6 +101,8 @@
     &__card
       margin-bottom: 20px
       padding: 24px 106px 24px 26px
+    &__title
+      margin-top: 77px
   .card
     width: 339px
   .footer
@@ -105,12 +112,15 @@
       grid-row-gap: 40px
     &__input
       &-group
-        flex-basis: 49%
+        flex-basis: 47%
+        font-size: 12px
     &__logo
       grid-row: 1 / 2
       grid-column: span 1
       width: 95px
       margin-left: 0
+    &__message
+      font-size: 12px
     &__social
       &-network
         grid-row: 1 / 2
@@ -227,6 +237,7 @@
         background-color: $light
         cursor: pointer
         margin: 0 13px
+        outline: none
         &__line
           width: 16px
           height: 1px
@@ -401,7 +412,7 @@
         &--prev
           margin-left: -90px
   .activities
-    padding-top: 33px
+    padding-top: 24px
     &__card
       &-1
         order: -2
@@ -416,6 +427,7 @@
       font-size: 18px
       line-height: 23px
       margin-bottom: 35px
+      margin-top: 0
   .card
       width: 95%
   .footer
@@ -511,6 +523,9 @@
       width: 248px
       margin-bottom: 19px
   .modal
+    &__dialog
+      width: 60%
+      // height: 100%
     &__close
       top: 3px
       right: 7px
@@ -518,26 +533,29 @@
       width: 7px
       height: 7px
     &__title
-      font-size: 11px
+      font-size: 15px
       margin-bottom: 7px
     &__input
-      margin-bottom: 10px
-      font-size: 7px
-      padding: 0 10px
-      height: 20px
+      margin-top: 10px
+      font-size: 10px
+      padding: 0 13px
+      height: 40px
     &__message
-      margin-bottom: 10px
-      font-size: 7px
-      padding: 7px 10px
-      min-height: 70%
+      margin-top: 10px
+      font-size: 10px
+      padding: 9px 13px
+      min-height: 80px
     &__info
-      font-size: 6px
+      margin-top: 5%
+      font-size: 10px
     &__button
       min-width: 50%
-      height: 19px
+      height: 40px
       padding: 2px
-      font-size: 7px
+      font-size: 10px
       text-align: center
+  .invalid
+    font-size: 10px
 
 @media (max-width: 380px)
   .subscribe
@@ -558,7 +576,7 @@
       &__text
         font-size: 12px
         line-height: 160%
-        width: 219px
+        width: 222px
         min-height: 266px
         margin-right: 1px
       &__button
@@ -574,3 +592,16 @@
         width: 281px
       &-form
         width: 281px
+  .modal
+    &__dialog
+      width: 75%
+      
+    &__info
+      margin-top: 5%
+      font-size: 8px
+    &__button
+      min-width: 50%
+      height: 35px
+      padding: 2px
+      font-size: 10px
+      text-align: center
