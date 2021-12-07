@@ -28,13 +28,17 @@
           </a>
           <form
             action="#"
-            class="search navbar__search navbar__search--mobile--hidden"
+            class="search navbar__search navbar__search--mobile--hidden form"
           >
-            <input
-              type="text"
-              class="search__input"
-              placeholder="Search Location"
-            />
+            <div class="search__input-group">
+              <input
+                type="search"
+                class="search__input"
+                placeholder="Search Location"
+                name="input"
+                required
+              />
+            </div>
             <button class="search__button">
               <img src="img/search.svg" alt="Icon: search" />
             </button>
@@ -77,13 +81,19 @@
             <li class="navbar-menu__item navbar-menu__item--mobile--visible">
               <form
                 action="#"
-                class="search navbar__search navbar__search--mobile--visible"
+                class="
+                  search
+                  navbar__search navbar__search--mobile--visible
+                  form
+                "
               >
                 <input
                   type="text"
                   class="search__input"
                   placeholder="Search Location"
+                  required
                 />
+
                 <button class="search__button">
                   <img src="img/search.svg" alt="Icon: search" />
                 </button>
@@ -284,14 +294,17 @@
           <form
             action="send.php"
             method="POST"
-            class="subscribe newsletter__subscribe"
+            class="subscribe newsletter__subscribe form"
           >
-            <input
-              type="text"
-              class="subscribe__input"
-              placeholder="Your email address"
-              name="email"
-            />
+            <div class="subscribe__input-group">
+              <input
+                type="email"
+                class="subscribe__input"
+                placeholder="Your email address"
+                name="email"
+                required
+              />
+            </div>
             <button class="subscribe__button">Send</button>
           </form>
         </div>
@@ -786,19 +799,25 @@ quest"
             <h3 class="footer__title footer__title--mb-mes">
               Send us a message
             </h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="footer__input-group">
+                <input
+                  type="tel"
+                  class="input footer__input"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                />
+              </div>
               <textarea
                 cols="30"
                 rows="10"
@@ -847,24 +866,29 @@ quest"
           <img class="modal__img" src="img/close.svg" alt="Icon: close" />
         </a>
         <h3 class="modal__title modal__title--mb-mes">Booking</h3>
-        <form action="send.php" method="POST" class="modal__form">
+        <form action="send.php" method="POST" class="modal__form form">
           <input
             type="text"
             class="input modal__input"
             placeholder="Your Full Name*"
             name="name"
+            required
+            minlength="2"
           />
+          <!-- required - поле обязательное для заполнения -->
           <input
-            type="text"
+            type="tel"
             class="input modal__input"
             placeholder="Phone Number*"
             name="phone"
+            required
           />
           <input
             type="text"
             class="input modal__input"
             placeholder="Email*"
             name="email"
+            required
           />
           <textarea
             class="message modal__message"
@@ -878,6 +902,7 @@ quest"
       <!-- /.modal__dialog -->
     </div>
     <!-- /.modal -->
+
     <script src="js/jquery-3.6.0.min.js"></script>
     <script
       src="https://api-maps.yandex.ru/2.1/?apikey=6d46177a-adfe-48d8-aaf9-def0d110d31f&lang=ru_RU"
@@ -887,6 +912,8 @@ quest"
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.mask.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

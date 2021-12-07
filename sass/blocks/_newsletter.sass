@@ -47,12 +47,9 @@
   height: 55px
   border-radius: 4px
   /** чтобы скрывал все что вываливается за пределы **/
-  overflow: hidden
+  /** overflow: hidden **/
   &__input
-    position: absolute
     width: 100%
-    padding-left: 33px
-    padding-right: 75px
     height: 100%
     border: none
     font-style: light
@@ -60,6 +57,20 @@
     font-size: 14px
     line-height: 18px
     color: #BDBDBD
+    &-group
+      position: absolute
+      width: 100%
+      padding-left: 33px
+      padding-right: 75px
+      height: 100%
+      border: none
+      font-style: light
+      font-weight: 300
+      font-size: 14px
+      line-height: 18px
+      color: #BDBDBD
+      background-color: $light
+      border-radius: 4px
   &__button
     position: absolute
     min-width: 65px
@@ -71,3 +82,6 @@
     color: $light
     font-style: Bold
     font-size: 12px
+    cursor: pointer
+    border-top-right-radius: 4px
+    border-bottom-right-radius: 4px

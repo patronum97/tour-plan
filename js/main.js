@@ -72,4 +72,26 @@ $(document).ready(function () {
       closeModal(event);
     }
   });
+  // Обработка форм для конкретно каждой формы
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "The name must be at least two letters",
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+        phone: {
+          required: "Phone is required",
+        },
+        input: {
+          required: "The value must not be empty!",
+        },
+      },
+    });
+  });
 });

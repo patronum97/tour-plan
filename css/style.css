@@ -394,6 +394,12 @@ img {
   background-color: #EC1F46;
   border: none;
   border-radius: 4px;
+  cursor: pointer;
+}
+
+.invalid {
+  color: #EC1F46;
+  /** border-bottom: 1px solid $primary **/
 }
 
 .navbar {
@@ -425,6 +431,7 @@ img {
 
 .navbar-button {
   background-color: #0A223D;
+  cursor: pointer;
 }
 
 .navbar-menu {
@@ -470,12 +477,21 @@ img {
   display: flex;
   position: relative;
   /** если что-то будет вывыливаться за пределы блока, то будем это скрывать **/
-  overflow: hidden;
   border-radius: 6px;
   height: 40px;
 }
 
 .search__input {
+  width: 100%;
+  height: 100%;
+  background-color: #F5FAFE;
+  font-size: 12px;
+  line-height: 15px;
+  color: #333333;
+  border: none;
+}
+
+.search__input-group {
   width: 350px;
   height: 100%;
   padding-left: 24px;
@@ -485,6 +501,7 @@ img {
   line-height: 15px;
   color: #333333;
   border: none;
+  border-radius: 4px;
 }
 
 .search__button {
@@ -495,6 +512,9 @@ img {
   top: 0;
   background: #EC1F46;
   border: none;
+  cursor: pointer;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 .user {
@@ -879,6 +899,7 @@ img {
   color: #fff;
   cursor: pointer;
   border: none;
+  padding: 0;
 }
 
 .map {
@@ -952,10 +973,21 @@ img {
   height: 55px;
   border-radius: 4px;
   /** чтобы скрывал все что вываливается за пределы **/
-  overflow: hidden;
+  /** overflow: hidden **/
 }
 
 .subscribe__input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-style: light;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: #BDBDBD;
+}
+
+.subscribe__input-group {
   position: absolute;
   width: 100%;
   padding-left: 33px;
@@ -967,6 +999,8 @@ img {
   font-size: 14px;
   line-height: 18px;
   color: #BDBDBD;
+  background-color: #fff;
+  border-radius: 4px;
 }
 
 .subscribe__button {
@@ -980,6 +1014,9 @@ img {
   color: #fff;
   font-style: Bold;
   font-size: 12px;
+  cursor: pointer;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 .reviews {
@@ -1400,6 +1437,10 @@ img {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 47%;
       flex-basis: 47%;
@@ -1545,7 +1586,7 @@ img {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1556,7 +1597,7 @@ img {
 .modal__message {
   width: 100%;
   min-height: 123px;
-  margin-bottom: 15px;
+  margin-top: 15px;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1576,6 +1617,10 @@ img {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.modal__button {
+  margin-top: 15px;
 }
 
 .modal__info {
@@ -1599,7 +1644,7 @@ img {
   .card {
     width: 230px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -1735,7 +1780,7 @@ img {
         grid-template-columns: repeat(6, 1fr);
     grid-row-gap: 40px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 49%;
         flex-basis: 49%;
   }
@@ -2052,7 +2097,7 @@ img {
   .card__title-4 {
     margin-right: -60px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -2270,7 +2315,7 @@ img {
   .footer__title--mb-mes {
     margin-bottom: 16px;
   }
-  .footer__input {
+  .footer__input-group {
     font-size: 12px;
     line-height: 15px;
   }

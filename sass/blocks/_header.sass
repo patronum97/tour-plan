@@ -13,6 +13,7 @@
     margin-left: 108px
   &-button
     background-color: $dark
+    cursor: pointer
   
   &-menu
     list-style-type: none
@@ -41,19 +42,29 @@
   display: flex
   position: relative
   /** если что-то будет вывыливаться за пределы блока, то будем это скрывать **/
-  overflow: hidden
+  // overflow: hidden
   border-radius: 6px
   height: 40px
+ 
   &__input
-    width: 350px
+    width: 100%
     height: 100%
-    padding-left: 24px
-    padding-right: 75px
     background-color: #F5FAFE
     font-size: 12px
     line-height: 15px
     color: $text-color
     border: none
+    &-group
+      width: 350px
+      height: 100%
+      padding-left: 24px
+      padding-right: 75px
+      background-color: #F5FAFE
+      font-size: 12px
+      line-height: 15px
+      color: $text-color
+      border: none
+      border-radius: 4px
   &__button
     position: absolute
     width: 65px
@@ -62,6 +73,9 @@
     top: 0
     background: $primary
     border: none
+    cursor: pointer
+    border-top-right-radius: 4px
+    border-bottom-right-radius: 4px
   
 .user
   display: flex

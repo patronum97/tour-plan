@@ -9,7 +9,8 @@
     width: 230px 
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -103,7 +104,8 @@
       grid-template-columns: repeat(6, 1fr)
       grid-row-gap: 40px
     &__input
-      flex-basis: 49%
+      &-group
+        flex-basis: 49%
     &__logo
       grid-row: 1 / 2
       grid-column: span 1
@@ -327,7 +329,8 @@
         margin-right: -60px
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
 @media (max-width: 729px)
   .footer
     &__additional
@@ -474,8 +477,9 @@
     &__title--mb-mes
       margin-bottom: 16px
     &__input
-      font-size: 12px
-      line-height: 15px
+      &-group
+        font-size: 12px
+        line-height: 15px
     &__message
       margin-bottom: 14px
     &__button
