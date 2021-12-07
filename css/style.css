@@ -2403,13 +2403,13 @@ img {
     margin-top: 10px;
     font-size: 10px;
     padding: 0 13px;
-    height: 40px;
+    height: 45px;
   }
   .modal__message {
     margin-top: 10px;
     font-size: 10px;
     padding: 9px 13px;
-    min-height: 80px;
+    min-height: 110px;
   }
   .modal__info {
     margin-top: 5%;
@@ -2417,7 +2417,7 @@ img {
   }
   .modal__button {
     min-width: 50%;
-    height: 40px;
+    height: 45px;
     padding: 2px;
     font-size: 10px;
     text-align: center;
