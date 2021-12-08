@@ -802,23 +802,26 @@ quest"
               Send us a message
             </h3>
             <form action="send.php" method="POST" class="footer__form form">
-              <div class="footer__input-group">
-                <input
-                  type="text"
-                  class="input footer__input"
-                  placeholder="Your Full Name*"
-                  name="name"
-                  required
-                />
-              </div>
-              <div class="footer__input-group">
-                <input
-                  type="tel"
-                  class="input footer__input phone"
-                  placeholder="Phone Number*"
-                  name="phone"
-                  required
-                />
+              <div class="footer__input-group-wrapper">
+                <div class="footer__input-group">
+                  <input
+                    type="text"
+                    class="input footer__input"
+                    placeholder="Your Full Name*"
+                    name="name"
+                    required
+                  />
+                </div>
+                <div class="footer__input-group">
+                  <input
+                    type="tel"
+                    class="input footer__input phone"
+                    placeholder="Phone Number*"
+                    name="phone"
+                    required
+                    minlength="17"
+                  />
+                </div>
               </div>
               <textarea
                 cols="30"
@@ -884,6 +887,7 @@ quest"
             placeholder="Phone Number*"
             name="phone"
             required
+            minlength="17"
           />
           <input
             type="text"

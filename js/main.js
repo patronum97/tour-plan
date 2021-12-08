@@ -86,6 +86,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "Phone is required",
+          minlength: "Phone number must be 11 digits long",
         },
         input: {
           required: "The value must not be empty!",
@@ -93,5 +94,5 @@ $(document).ready(function () {
       },
     });
   });
-  $(".phone").mask("+7(999) 999-99-99");
+  $(".phone").mask("+7(999) 999-99-99", { clearIncomplete: true });
 });
