@@ -11,7 +11,9 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -19,7 +21,7 @@
       <div class="container">
         <div class="navbar-top">
           <!-- обертка, делаем чтобы потом задать display flex и раскидать элементы -->
-          <a href="#" class="logo">
+          <a href="#" class="logo" data-aos="fade-down" data-aos-delay="100">
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -27,6 +29,8 @@
             />
           </a>
           <form
+            data-aos="fade-down"
+            data-aos-delay="200"
             action="#"
             class="search navbar__search navbar__search--mobile--hidden form"
           >
@@ -44,7 +48,12 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+          <a
+            href="#"
+            class="user navbar__user navbar__user--mobile--hidden"
+            data-aos="fade-down"
+            data-aos-delay="300"
+          >
             <img
               src="img/user-avatar.jpg"
               alt="Avatar: Nathan"
@@ -289,11 +298,19 @@
     <section class="newsletter">
       <div class="container">
         <div class="newsletter-wrapper">
-          <h2 class="newsletter-title newsletter__title">
+          <h2
+            class="newsletter-title newsletter__title"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="200"
+          >
             subscribe to our
             <span class="newsletter-title__strong">Newsletter</span>
           </h2>
           <form
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="200"
             action="send.php"
             method="POST"
             class="subscribe newsletter__subscribe form"
@@ -602,7 +619,11 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card activities__card-1">
+          <div
+            class="card activities__card activities__card-1"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <img
               src="img/activity-1.jpg"
               alt="The curious corner 
@@ -615,7 +636,11 @@ of chamarel"
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card activities__card-2">
+          <div
+            class="card activities__card activities__card-2"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <img
               src="img/activity-2.jpg"
               alt="Gymkhana club golf
@@ -626,7 +651,11 @@ course"
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card activities__card-3">
+          <div
+            class="card activities__card activities__card-3"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <img
               src="img/activity-3.jpg"
               alt="Tamarind falls hiking
@@ -639,7 +668,11 @@ trip - full day"
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card activities__card-4">
+          <div
+            class="card activities__card activities__card-4"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
             <img
               src="img/activity-4.jpg"
               alt="The blue marine discovery
@@ -662,6 +695,9 @@ quest"
       <div class="container">
         <div class="footer-wrapper">
           <img
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
             src="img/vertical-logo.svg"
             alt="Best Tour Plan"
             class="logo footer__logo"
@@ -920,6 +956,7 @@ quest"
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.mask.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
