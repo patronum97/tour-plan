@@ -1,0 +1,127 @@
+.packages
+  padding: 80px 0 0 0
+  &-wrapper
+    display: grid
+    grid-template-columns: repeat(3, minmax(min-content, 350px))
+    grid-gap: 30px
+    grid-auto-rows: minmax(40px,min-content)
+    /** по умолчанию у грид стоит stretch **/
+    align-items: start
+  &-title
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+    margin-bottom: 65px
+  
+.package
+  &__offer
+    position: absolute
+    left: 0
+    top: 26px
+    font-size: 8px
+    line-height: 10px
+  &__info
+    padding: 10px 21px 25px 32px 
+  &-big
+    position: relative
+    display: flex
+    height: 500px
+    border-radius: 8px
+    overflow: hidden
+    background-color: $dark
+    grid-column: span 2
+    color: $light
+    border: none
+    &__image
+      width: 50%
+      height: 100%
+      object-fit: cover
+    &__info
+      width: 50%
+      padding: 46px 21px 30px 45px
+    &__room
+      margin-bottom: 37px
+    &__offer
+      padding: 12px 22px 8px 11px
+      font-size: 12px
+      max-width: 95px
+      max-height: 30px
+
+  &-text
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 160.6%
+    margin-bottom: 43px
+    margin-top: 4px
+  &__text
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    margin-bottom: 11px
+  &__description
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+  &__icon
+    margin-right: 15px
+  &__price
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 18px
+    margin-bottom: 5px
+    text-decoration-line: line-through
+  &__saletag
+    font-style: normal
+    font-weight: bold
+    font-size: 24px
+    line-height: 30px
+    margin-top: 4px
+  &__sale
+    display: flex
+    justify-content: space-between
+
+  &-title
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    margin-bottom: 23px
+    &--big
+      margin-top: 4px
+      margin-bottom: 26px
+  &__button
+    font-family: Nunito
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    padding: 11px 27px 10px 26px
+    color: #fff
+    border: none
+    border-radius: 4px
+    background-color: #EC1F46
+    cursor: pointer
+  &-small
+    position: relative
+    overflow: hidden
+    background-color: $dark
+    color: $light
+    border-radius: 8px
+    height: 500px
+    border: none
+    &__image
+      width: 350px
+      height: 250px
+      object-fit: cover
+    &__room
+      margin-bottom: 24px
+    
+      
+
+  

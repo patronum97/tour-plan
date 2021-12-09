@@ -182,7 +182,9 @@
     &__dialog
       &--visible
         padding: 5% 5%
-
+  .packages
+    &-wrapper
+      grid-template-columns: repeat(2, minmax(min-content, 350px))
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -348,6 +350,9 @@
         flex-basis: 100%
         &-wrapper
           flex-direction: column
+  .package
+    &-wrapper
+      grid-template-columns: repeat(1, minmax(min-content, 350px))
 @media (max-width: 729px)
   .footer
     &__additional
