@@ -55,6 +55,8 @@ $(document).ready(function () {
     // когда откроется окно будут присвоены новые классы
     modalOverlay.addClass("modal__overlay--visible");
     modalDialog.addClass("modal__dialog--visible");
+    // запрещаем прокрутку сайта при открытии модального окна
+    document.body.style.overflow = "hidden";
   }
   function closeModal(event) {
     //функция чтобы при закрытии окна не перебрасывало на самое начало страницы (отменяет href=#)
@@ -64,6 +66,8 @@ $(document).ready(function () {
     // когда откроется окно будут удалены новые классы
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
+    // возвращаем прокрутку сайта при открытии модального окна
+    document.body.style.overflow = "";
   }
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape") {

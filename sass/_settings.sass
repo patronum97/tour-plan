@@ -5,6 +5,7 @@ body
   font-family: 'Mulish', sans-serif
   color: $text-color
   background-color: $second
+  
 .booking
   font-family: 'Nunito', sans-serif
 
@@ -39,6 +40,18 @@ img
   border-radius: 4px
   cursor: pointer
   outline: none
+  transition: 0.2s 
 .invalid
   color: $primary
   /** border-bottom: 1px solid $primary **/
+.hover
+  &:hover
+    background-color: #a10824 
+    box-shadow: inset 0 0 0 3px #eed0d0
+.hover-light
+  &:hover
+    background-color: #a10824 
+    box-shadow: inset 0 0 0 3px $dark
+.hover-menu
+  &:hover
+    color: $primary
