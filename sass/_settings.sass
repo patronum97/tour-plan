@@ -5,7 +5,7 @@ body
   font-family: 'Mulish', sans-serif
   color: $text-color
   background-color: $second
-  
+  /** padding-right: 15px **/
 .booking
   font-family: 'Nunito', sans-serif
 
@@ -48,10 +48,13 @@ img
   &:hover
     background-color: #a10824 
     box-shadow: inset 0 0 0 3px #eed0d0
+    transition: all 0.5s
 .hover-light
   &:hover
     background-color: #a10824 
     box-shadow: inset 0 0 0 3px $dark
-.hover-menu
+    transition: all 0.5s
+.hover-menu, .hover-crumb
   &:hover
     color: $primary
+    transition: all 0.5s

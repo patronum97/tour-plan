@@ -57,6 +57,9 @@ $(document).ready(function () {
     modalDialog.addClass("modal__dialog--visible");
     // запрещаем прокрутку сайта при открытии модального окна
     document.body.style.overflow = "hidden";
+    document.body.style.paddingRight = "22px";
+    // var $bodyWidth = $("body").width();
+    // $("body").css({ "padding-right": $("body").width() - $bodyWidth });
   }
   function closeModal(event) {
     //функция чтобы при закрытии окна не перебрасывало на самое начало страницы (отменяет href=#)
@@ -68,6 +71,7 @@ $(document).ready(function () {
     modalDialog.removeClass("modal__dialog--visible");
     // возвращаем прокрутку сайта при открытии модального окна
     document.body.style.overflow = "";
+    document.body.style.paddingRight = "0";
   }
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape") {

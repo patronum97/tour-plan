@@ -26,6 +26,9 @@
     &__link
       &:hover
         color: $footer-text-color
+  .hover-crumb
+    &:hover
+      color: $text-color
   .hover-menu
     &:hover
       color: $light
@@ -88,6 +91,8 @@
 
   .reviews
     padding: 37px 0 0 0
+    &-rating
+      margin-bottom: 0
     &__title
       font-size: 30px
       line-height: 38px
@@ -105,6 +110,7 @@
       &__date
         margin-bottom: -3px
       &__text
+        margin-top: 3px
         font-size: 12px
         line-height: 160%
         padding-left: 0
@@ -131,7 +137,7 @@
   .footer
     padding-top: 59px
     &__title
-      margin-top: 6px
+      margin-top: 5px
     &-wrapper
       grid-template-columns: repeat(6, 1fr)
       grid-row-gap: 40px
@@ -210,6 +216,7 @@
         margin-left: 0
   .modal
     &__dialog
+      width: 70%
       &--visible
         padding: 5% 5%
   .packages
@@ -341,6 +348,10 @@
     width: 100%
     &__input
       padding-left: 20px
+      &-group
+        margin-top: 2px
+    &__button
+      margin-top: 2px
   .reviews
     &-slider
       &__item
@@ -522,6 +533,8 @@
   .card
       width: 95%
   .footer
+    &__title
+      margin-top: 6px
     &-wrapper
       grid-template-columns: 1fr
     &__logo
@@ -562,7 +575,7 @@
         margin-left: 0
         margin-top: -8px
       &-form
-        margin-top: -8px
+        margin-top: -6px
         grid-row: 7
         grid-column: 1
     &__form
@@ -616,7 +629,7 @@
       margin-bottom: 19px
   .modal
     &__dialog
-      width: 60%
+      width: 65%
       /** height: 60% **/
     &__close
       top: 3px
@@ -649,10 +662,18 @@
       text-align: center
   .invalid
     font-size: 10px
-
+@media (max-width: 480px)
+  .modal
+    &__dialog
+      width: 75%
 @media (max-width: 380px)
   .subscribe
     width: 280px
+    &__input
+      &-group
+        margin-top: -1px
+    &__button
+      margin-top: -1px
   .reviews
     padding: 40px 0 70px 0
     &__title
