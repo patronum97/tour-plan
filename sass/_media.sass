@@ -32,6 +32,18 @@
   .hover-menu
     &:hover
       color: $light
+  .hover-avatar
+    &:hover
+      border: none
+      transition: all 0s
+  .hover-icon
+    &:hover
+      transform: none
+      transition: all 0s
+  .hover-slider
+    &:hover
+      opacity: 1
+      transition: all 0s 
   .container
     max-width: 700px
   .navbar
@@ -43,6 +55,7 @@
     &-menu
       padding: 22px 14px 21px 15px
       &__link
+        
         font-size: 12px
         line-height: 15px
   .logo
@@ -254,9 +267,11 @@
       top: 78px
       padding-top: 30px
       padding-bottom: 68px
-      min-height: 498px
+      /** min-height: 498px **/
       &--visible
         display: block
+        max-height: 100vh
+        overflow: scroll
     &-menu
       flex-direction: column
       &__item
@@ -474,7 +489,7 @@
       height: 179px
     &__button
       width: 0px
-      height: 7px
+      height: 11px
       &--next
         right: 7px
       &--prev
@@ -486,6 +501,11 @@
     /** &-grid
       &__slider
         margin-bottom: 20px **/
+  .packages
+    &-title
+      font-size: 20px
+      line-height: 23px 
+      margin-bottom: 40px
   .newsletter
     padding: 76px 0 83px 0
     &__title
@@ -539,45 +559,45 @@
       grid-template-columns: 1fr
     &__logo
       grid-row: 1
-      grid-column: 1
+      grid-column: 1 / 2
       width: 95px
     &__social
       &-network
         display: flex
-        flex-direction: column
-        grid-row: 2
-        grid-column: 1
+        flex-direction: row
+        grid-row: 1
+        grid-column: span 2
         margin-left: 0
         margin-top: -1px
-        align-items: start
+        align-items: center
+        margin-left: 31%
       &-links
-        margin-top: 22px
+        margin-top: 0px
     &__additional
-      grid-row: 4
-      grid-column: 1
+      grid-row: 2
+      grid-column: span 2
       margin-top: -20px
       margin-bottom: 4px
     &__categories
-      grid-row: 5
-      grid-column: 1
-      margin-top: -24px
+      grid-row: 3
+      grid-column: span 2
+      
       margin-left: 0
     &__legal
-      grid-row: 3
-      grid-column: 1
+      grid-row: 2
+      grid-column: span 2
       margin-left: 0
       margin-top: -19px
     &__contact
       &-details
-        grid-row: 6
-        grid-column: 1
-        margin-top: 0
+        grid-row: 3
+        grid-column: span 2
+        margin-top: 2px
         margin-left: 0
-        margin-top: -8px
       &-form
         margin-top: -6px
-        grid-row: 7
-        grid-column: 1
+        grid-row: 4
+        grid-column: span 4
     &__form
       margin-right: -3px
     &__message
@@ -607,7 +627,7 @@
     &-bottom
       width: 277px
       flex-direction: column
-      grid-row: 8
+      grid-row: 5
       margin-top: -11px
       &__item
         margin-right: 8px
@@ -662,11 +682,86 @@
       text-align: center
   .invalid
     font-size: 10px
+@media (max-width: 520px)
+  .footer
+    &-wrapper
+      grid-gap: 0px
+    &__additional
+      margin-top: 10px
+    &__legal
+      margin-top: 10px
+    &__contact
+      &-form
+        margin-bottom: 31px
+        
 @media (max-width: 480px)
   .modal
     &__dialog
       width: 75%
+  .footer
+    &-wrapper
+      grid-gap: 39px
+    &__logo
+      grid-row: 1
+      grid-column: 1
+      width: 95px
+    &__social
+      &-network
+        display: flex
+        flex-direction: column
+        grid-row: 2
+        grid-column: 1
+        margin-left: 0
+        margin-top: 0px
+        align-items: start
+      &-links
+        margin-top: 22px
+    &__additional
+      grid-row: 4
+      grid-column: span 2
+      margin-top: -20px
+      margin-bottom: 4px
+    &__categories
+      grid-row: 5
+      grid-column: 1
+      margin-top: -22px
+      margin-left: 0
+    &__legal
+      grid-row: 3
+      grid-column: 1
+      margin-left: 0
+      margin-top: -19px
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: span 5
+        margin-top: 0
+        margin-left: 0
+        margin-top: -6px
+      &-form
+        margin-top: -6px
+        grid-row: 7
+        grid-column: span 6
+    &-bottom
+      width: 277px
+      flex-direction: column
+      grid-row: 8
+      margin-top: -40px
+      &__item
+        margin-right: 8px
+      &__info
+        margin-bottom: 11px
+@media (max-width: 440px)
+  .footer
+      &-form
+        
+        grid-column: span 6
 @media (max-width: 380px)
+  .navbar-top
+    padding-top: 22px
+  .breadcrumb
+    &-list
+      padding: 10px 0 18px 0
   .subscribe
     width: 280px
     &__input
@@ -674,6 +769,11 @@
         margin-top: -1px
     &__button
       margin-top: -1px
+  .packages
+    &-title
+      font-size: 18px
+      line-height: 23px 
+      margin-top: -20px
   .reviews
     padding: 40px 0 70px 0
     &__title
@@ -705,6 +805,7 @@
     &__contact
       &-details
         width: 281px
+        grid-column: 1
       &-form
         width: 281px
     &__title
@@ -713,6 +814,9 @@
     &__social
       &-links
         margin-left: 3px
+    &__additional
+      
+      grid-column: 1
      
   .modal
     &__dialog
