@@ -17,9 +17,9 @@
       opacity: 1
   &__dialog
     position: fixed
-    max-height: 100vh
+    max-height: 90vh
     
-    overflow-y: auto
+    /** overflow-y: auto **/
     top: 50%
     left: 50%
     padding: 33px 88px
@@ -36,6 +36,9 @@
     &--visible
       visibility: visible
       opacity: 1
+  &__wrapper
+    max-height: 75vh
+    overflow: auto
   &__close
     position: absolute
     right: 18px

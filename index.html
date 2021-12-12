@@ -22,7 +22,12 @@
       <div class="container">
         <div class="navbar-top">
           <!-- обертка, делаем чтобы потом задать display flex и раскидать элементы -->
-          <a href="#" class="logo" data-aos="fade-down" data-aos-delay="100">
+          <a
+            href="index.html"
+            class="logo"
+            data-aos="fade-down"
+            data-aos-delay="100"
+          >
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -58,9 +63,9 @@
             <img
               src="img/user-avatar.jpg"
               alt="Avatar: Nathan"
-              class="user__avatar"
+              class="user__avatar hover-avatar"
             />
-            <span class="user__name">Nathan</span>
+            <span class="user__name hover-crumb">Nathan</span>
           </a>
           <button class="menu-button navbar-top__menu-button">
             <span class="menu-button__line"></span
@@ -166,7 +171,7 @@
                 <img class="stars__item" src="img/star.svg" alt="star" />
               </div>
               <h1 class="hotel-name hotel-info__name">Grand Hilton Hotel</h1>
-              <span class="offer hotel-info__offer">Flash Offer</span>
+              <span class="offer hotel-info__offer">Flash&nbspOffer</span>
             </div>
             <p class="hotel-discription hotel-info__discription">
               Half-Board/ All Inclusive + Complimentary Activities + Child Stays
@@ -234,10 +239,16 @@
               </div>
               <!-- If we need navigation buttons -->
               <button
-                class="swiper-hotel__button swiper-hotel__button--prev"
+                class="
+                  swiper-hotel__button swiper-hotel__button--prev
+                  hover-slider
+                "
               ></button>
               <button
-                class="swiper-hotel__button swiper-hotel__button--next"
+                class="
+                  swiper-hotel__button swiper-hotel__button--next
+                  hover-slider
+                "
               ></button>
             </div>
             <!-- swiper-container -->
@@ -277,7 +288,7 @@
                 <span class="booking__heading">Quick Booking</span>
                 <a href="tel:12100" class="booking__number">
                   <img src="img/phone-call.svg" alt="Icon: phone" />
-                  <span class="booking__num">12100</span>
+                  <span class="booking__num hover-menu">12100</span>
                 </a>
               </div>
               <!-- /.booking__call-center -->
@@ -918,10 +929,16 @@
           </div>
           <!-- swiper-wrapper -->
           <button
-            class="reviews-slider__button reviews-slider__button--prev"
+            class="
+              reviews-slider__button reviews-slider__button--prev
+              hover-slider
+            "
           ></button>
           <button
-            class="reviews-slider__button reviews-slider__button--next"
+            class="
+              reviews-slider__button reviews-slider__button--next
+              hover-slider
+            "
           ></button>
         </div>
         <!-- reviews-slider -->
@@ -1107,14 +1124,34 @@ quest"
           <div class="footer__social-network">
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
-              <a href="#" target="_blank" class="footer__link">
-                <img src="img/facebook.svg" alt="Icon: facebook" />
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="footer__link"
+              >
+                <img
+                  class="hover-icon"
+                  src="img/facebook.svg"
+                  alt="Icon: facebook"
+                />
               </a>
-              <a href="#" target="_blank" class="footer__link"
-                ><img src="img/youtube.svg" alt="Icon: youtube"
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                class="footer__link"
+                ><img
+                  class="hover-icon"
+                  src="img/youtube.svg"
+                  alt="Icon: youtube"
               /></a>
-              <a href="#" target="_blank" class="footer__link"
-                ><img src="img/instagrame.svg" alt="Icon: instagram"
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="footer__link"
+                ><img
+                  class="hover-icon"
+                  src="img/instagrame.svg"
+                  alt="Icon: instagram"
               /></a>
             </div>
             <!-- /.footer__social-links -->
@@ -1181,14 +1218,14 @@ quest"
                   <li class="footer__item footer__item--tel">
                     Tel (hotline) Monday - Saturday:
                     <a href="tel:2-56-61-38" class="footer__link">
-                      52-56-61-38
+                      52&#8209;56&#8209;61&#8209;38
                     </a>
                     (08:00 am – 20:00 pm)
                   </li>
                   <li class="footer__item footer__item--tel">
                     Tel (hotline) Sunday:
                     <a href="tel:52-56-61-38" class="footer__link">
-                      52-56-61-38
+                      52&#8209;56&#8209;61&#8209;38
                     </a>
                     (08:00 am – 14:00 pm)
                   </li>
@@ -1258,12 +1295,12 @@ quest"
               </li>
               <li class="footer-bottom__item">
                 <a href="#" class="footer-bottom__link hover-menu"
-                  >Conditions of use</a
+                  >Conditions&nbsp;of&nbsp;use</a
                 >
               </li>
               <li class="footer-bottom__item">
                 <a href="#" class="footer-bottom__link hover-menu"
-                  >Cancellation policy</a
+                  >Cancellation&nbsp;policy</a
                 >
               </li>
             </ul>
@@ -1290,41 +1327,46 @@ quest"
         <a href="#" class="modal__close">
           <img class="modal__img" src="img/close.svg" alt="Icon: close" />
         </a>
-        <h3 class="modal__title modal__title--mb-mes">Booking</h3>
-        <form action="send.php" method="POST" class="modal__form form">
-          <input
-            type="text"
-            class="input modal__input"
-            placeholder="Your Full Name*"
-            name="name"
-            required
-            minlength="2"
-          />
-          <!-- required - поле обязательное для заполнения -->
-          <input
-            type="tel"
-            class="input modal__input phone"
-            placeholder="Phone Number*"
-            name="phone"
-            required
-            minlength="17"
-          />
-          <input
-            type="email"
-            class="input modal__input"
-            placeholder="Email*"
-            name="email"
-            required
-            aria-invalid="true"
-          />
-          <textarea
-            class="message modal__message"
-            placeholder="Message"
-            name="message"
-          ></textarea>
-          <button class="button modal__button hover" type="submit">Send</button>
-          <span class="modal__info">* Required Fields</span>
-        </form>
+        <div class="modal__wrapper">
+          <h3 class="modal__title modal__title--mb-mes">Booking</h3>
+          <form action="send.php" method="POST" class="modal__form form">
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Your Full Name*"
+              name="name"
+              required
+              minlength="2"
+            />
+            <!-- required - поле обязательное для заполнения -->
+            <input
+              type="tel"
+              class="input modal__input phone"
+              placeholder="Phone Number*"
+              name="phone"
+              required
+              minlength="17"
+            />
+            <input
+              type="email"
+              class="input modal__input"
+              placeholder="Email*"
+              name="email"
+              required
+              aria-invalid="true"
+            />
+            <textarea
+              class="message modal__message"
+              placeholder="Message"
+              name="message"
+            ></textarea>
+            <button class="button modal__button hover" type="submit">
+              Send
+            </button>
+            <span class="modal__info">* Required Fields</span>
+          </form>
+        </div>
+        <!-- /.modal_wrapper -->
       </div>
       <!-- /.modal__dialog -->
     </div>
