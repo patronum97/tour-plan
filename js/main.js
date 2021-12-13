@@ -31,7 +31,7 @@ $(document).ready(function () {
 
   var menuButton = document.querySelector(".menu-button");
   menuButton.addEventListener("click", function () {
-    console.log("Клик по кнопке меню");
+    // console.log("Клик по кнопке меню");
     document
       .querySelector(".navbar-button")
       /* при нажатии на кнопку меняется класс */
